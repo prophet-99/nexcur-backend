@@ -1,0 +1,49 @@
+{
+  "name": "nexcur-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc && npm run start",
+    "start:dev": "tsc-watch --onSuccess \"babel-node dist/server.js\"",
+    "install-prod": "npm i --only=prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prophet-99/nexcur-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prophet-99/nexcur-backend/issues"
+  },
+  "homepage": "https://github.com/prophet-99/nexcur-backend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/pg": "^8.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "pg": "^8.8.0"
+  }
+}
