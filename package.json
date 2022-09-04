@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run build",
-    "build": "tsc && npm run start:prod",
-    "start:prod": "node dist/server.js",
+    "start": "node dist/server.js",
+    "build": "tsc",
     "start:dev": "tsc-watch --onSuccess \"babel-node dist/server.js\"",
     "install-prod": "npm i --only=prod"
   },
